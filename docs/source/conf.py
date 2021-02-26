@@ -92,7 +92,8 @@ exclude_patterns = []
 # show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = "sphinx"
+pygments_dark_style = "monokai"
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
@@ -109,8 +110,8 @@ html_theme = 'furo'
 # html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-# html_theme_path = ["_themes",]
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme_path = ["_themes",]
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
