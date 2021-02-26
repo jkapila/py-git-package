@@ -10,7 +10,7 @@ API
 Power Curve
 ===========
 
-.. automodule:: fortuils.example_module
+.. automodule:: forutils.example_module
     :members:
 
 
@@ -19,5 +19,5 @@ Power Curve
 Exceptions
 ==========
 
-.. automodule:: fortuils.exceptions
+.. automodule:: forutils.exceptions
     :members:
