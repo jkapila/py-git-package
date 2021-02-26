@@ -4,12 +4,12 @@
 Installation
 ============
 
-**{{library_name}}** is available on `pypi <https://pypi.org/>`_, so installation into your python virtual environment is dead
+forutils is available on `pypi <https://pypi.org/>`_, so installation into your python virtual environment is dead
 simple:
 
 .. code-block:: py
 
-    pip install {{library_name}}
+    pip install forutils
 
 Don't have a virtual environment with pip? You probably should! ``pyenv`` is your friend. Google it.
 
