@@ -49,7 +49,7 @@ You cna create numbered bullets too. Here are some things that were important in
 #. Openness
 #. Federation
 #. Security
-#. Public Good (cross ref other parts of the docs like this... :ref:`_using_inline_tabs`)
+#. Public Good (cross ref other parts of the docs like this... :ref:`using_inline_tabs`)
 
 ---
 
