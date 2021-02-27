@@ -20,18 +20,21 @@ Py - Git - Package : A modern template for Python Package
 
 
 .. epigraph::
-   This is some test text here!!!
+   This is some **awesome text** about your package!!!
+
+Go ahead use the template and create and awesome package
 
 
 .. teaser-end
 
 .. context-begin
-This a python package template based on shoulder of:
 
-   1. `python-library-template <https://github.com/thclark/python-library-template>`_ as main pakage template created by `Tom Clark  <https://github.com/thclark>`_
-   2. `Furo  <https://pradyunsg.me/furo/>`_ (Sphinx theme) for Documentation
-   3. Github Pages for hosting Documentation
-   4. `Pre-commit  <www.pre-commit.com>`_ hooks for cleaning and building things before we ake any commit (Includes Sphinx Auto Doc Builds too)
+This a python package template based on shoulder of
+
+1. `python-library-template <https://github.com/thclark/python-library-template>`_ as main pakage template created by `Tom Clark  <https://github.com/thclark>`_
+2. `Furo  <https://pradyunsg.me/furo/>`_ (Sphinx theme) for Documentation
+3. Github Pages for hosting Documentation
+4. `Pre-commit  <www.pre-commit.com>`_ hooks for cleaning and building things before we ake any commit (Includes Sphinx Auto Doc Builds too)
 
 .. context-end
 

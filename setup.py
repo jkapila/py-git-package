@@ -1,5 +1,6 @@
 from setuptools import find_packages, setup
 
+
 # Note:
 #   The Hitchiker's guide to python provides an excellent, standard, method for creating python packages:
 #       http://docs.python-guide.org/en/latest/writing/structure/
@@ -14,17 +15,17 @@ with open("LICENSE") as f:
     license_text = f.read()
 
 setup(
-    name="forutils",
+    name="py-git-package",
     version="0.0.1",
     py_modules=[],
-    install_requires=["twined >= 0.0.10"],
-    url="https://www.github.com/jkapila/forutils",
-    license='MIT',
-    author="Jitin Kapila",
-    description="Utilities for Forecasting",
+    install_requires=[],
+    url="https://www.github.com/username/py-git-package",
+    license="MIT",
+    author="user you",
+    description="An awesome package for all",
     long_description=readme_text,
     long_description_content_type="text/markdown",
-    packages=find_packages(exclude=("tests", "docs")),
+    packages=find_packages(exclude=("tests", "docsrc")),
     include_package_data=True,
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -36,5 +37,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.6",
-    keywords=["Forecasting", "variables","pandas","functions"],
+    keywords=["package", "pre-commit", "furo", "package development"],
 )
