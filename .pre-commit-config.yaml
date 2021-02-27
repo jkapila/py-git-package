@@ -32,7 +32,16 @@ repos:
         additional_dependencies: [flake8-isort]
         language_version: python3
 
-
+  - repo: local
+    hooks:
+      - id: sphinx-build
+        name: sphinx build
+        entry: python -m sphinx.cmd.build
+        args: [-W, -b, html ,-d docsrc/doctrees, docsrc/, docs/]
+        language: system
+        files: ^docsrc/
+        types: [file]
+        pass_filenames: false
 
   - repo: https://github.com/windpioneers/pre-commit-hooks
     rev: 0.0.5

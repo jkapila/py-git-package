@@ -36,7 +36,9 @@
   --color-code-foreground: #d0d0d0;
   
   }
-</style><link rel="stylesheet" href="_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
+</style><link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" href="_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
   <body dir="">
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -88,7 +90,7 @@
       <a href="#"><div class="brand">fortuils: Utilities for Forecasting</div></a>
     </div>
     <div class="header-right">
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
     </div>
@@ -109,10 +111,11 @@
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">FORecasting UTILS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
-<li class="toctree-l1"><a class="reference internal" href="example_chapter.html">A Chapter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="version_history.html">Version History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example_chapter.html">A Chapter</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/jkapila/forutils">GitHub Repository</a></li>
 </ul>
 
 </div>
@@ -124,10 +127,16 @@
   <main class="main">
     <div class="content">
       <article role="main">
-        <label class="toc-overlay-icon toc-content-icon" for="__toc">
+        <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <p>Add badges and labels like this:</p>
+        <div class="section" id="forecasting-utils">
+<h1>FORecasting UTILS<a class="headerlink" href="#forecasting-utils" title="Permalink to this headline">¶</a></h1>
+<p><strong>forutils</strong> is here to make better features for forecasting purpose.</p>
+<blockquote class="epigraph">
+<div><p>This is some test text here!!!</p>
+</div></blockquote>
+<p>Lot have to be written here but would write eventually.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>This library is in very early stages. Like the idea of it? Please
@@ -135,17 +144,7 @@
 <a class="reference external" href="https://github.com/jkapila/forutils/issues">issues board</a> and
 <a class="reference external" href="https://github.com/jkapila/forutils/projects/1">roadmap</a>.</p>
 </div>
-<div class="section" id="forecasting-utils">
-<h1>FORecasting UTILS<a class="headerlink" href="#forecasting-utils" title="Permalink to this headline">¶</a></h1>
-<p><strong>forutils</strong> is here to make better features for forecasting purpose.</p>
-<blockquote class="epigraph">
-<div><p>This is some test text here!!!</p>
-</div></blockquote>
-<p>Lot have to be written here but would write eventually.</p>
-<p>Some parts of ReStructuredText (rst) are shown to help you write your docs in <a class="reference internal" href="example_chapter.html#a-chapter"><span class="std std-ref">A Chapter</span></a>.</p>
-<div class="section" id="raison-d-etre">
-<span id="reason-for-being"></span><h2>Raison d’etre<a class="headerlink" href="#raison-d-etre" title="Permalink to this headline">¶</a></h2>
-<p>Insert your personal rant here…</p>
+<p>Something which I dont what to see right now but is only for reference <a class="reference internal" href="example_chapter.html#a-chapter"><span class="std std-ref">A Chapter</span></a>.</p>
 <div class="toctree-wrapper compound">
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">FORecasting UTILS</a></li>
@@ -156,11 +155,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="quick_start.html#just-to-quick-start-things">Just to quick start things</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="example_chapter.html">A Chapter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="example_chapter.html#a-section">A Section</a></li>
-<li class="toctree-l2"><a class="reference internal" href="example_chapter.html#simple-using-group-tabs">[Simple] Using Group Tabs</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API</a><ul>
@@ -178,8 +172,15 @@
 <li class="toctree-l2"><a class="reference internal" href="version_history.html#version-0-0-1">0.0.1</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="example_chapter.html">A Chapter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="example_chapter.html#a-section">A Section</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example_chapter.html#inline-tabs">Inline Tabs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example_chapter.html#simple-using-group-tabs">[Simple] Using Group Tabs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example_chapter.html#using-group-tabs">[Simple] Using Group Tabs</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/jkapila/forutils">GitHub Repository</a></li>
+</ul>
 </div>
 </div>
 
@@ -205,27 +206,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            Contents
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">FORecasting UTILS</a><ul>
-<li><a class="reference internal" href="#raison-d-etre">Raison d’etre</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
@@ -235,5 +217,8 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
     <script src="_static/scripts/main.js?digest=e931d09b2a40c1bb82b542effe772014573baf67"></script></body>
 </html>

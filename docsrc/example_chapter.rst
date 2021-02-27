@@ -36,25 +36,27 @@ You cna create numbered bullets too. Here are some things that were important in
 #. Public Good (cross ref other parts of the docs like this... :ref:`using_group_tabs`)
 
 
+.. _using_inline_tabs:
+
+Inline Tabs
+===========
+
+[Simple] Using Group Tabs
+=========================
+
+.. tab:: Good Looks
+
+      This actually looks better than group tabs
+
+.. tab:: Even better looks
+	  
+	  This also suits the original look and feel of theme
+
+
+
+
 .. _using_group_tabs:
 
 [Simple] Using Group Tabs
 =========================
 
-.. tabs::
-
-   .. group-tab:: Scenario
-
-      Some text appears in a tabbed box
-
-   .. group-tab:: Twine
-
-      A box can have ``code_values``.
-
-      And multiple paragraphs
-
-      .. code-block:: javascript
-
-         {
-             "and": "A Code Block",
-         }

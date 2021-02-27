@@ -1,4 +1,21 @@
-Add badges and labels like this:
+
+=================
+FORecasting UTILS
+=================	
+
+**forutils** is here to make better features for forecasting purpose.
+
+
+.. epigraph::
+   This is some test text here!!!
+
+
+Lot have to be written here but would write eventually.
+
+
+
+
+
 
 .. important::
     This library is in very early stages. Like the idea of it? Please
@@ -17,22 +34,7 @@ Add badges and labels like this:
 	  :alt: Code Style
 	  :align: right
 
-=================
-FORecasting UTILS
-=================	
-
-**forutils** is here to make better features for forecasting purpose.
-
-
-.. epigraph::
-   This is some test text here!!!
-
-
-Lot have to be written here but would write eventually.
-
-
 Something which I dont what to see right now but is only for reference :ref:`a_chapter`.
-
 
 
 .. toctree::
@@ -41,7 +43,8 @@ Something which I dont what to see right now but is only for reference :ref:`a_c
    self
    installation
    quick_start
-   example_chapter
    api
    license
    version_history
+   example_chapter
+   GitHub Repository <https://github.com/jkapila/forutils>
