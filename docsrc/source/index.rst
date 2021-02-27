@@ -1,41 +1,37 @@
 Add badges and labels like this:
 
-.. ATTENTION::
+.. important::
     This library is in very early stages. Like the idea of it? Please
     `star us on GitHub <https://github.com/jkapila/forutils>`_ and contribute via the
     `issues board <https://github.com/jkapila/forutils/issues>`_ and
     `roadmap <https://github.com/jkapila/forutils/projects/1>`_.
 
-.. image:: https://codecov.io/gh/{{codecov_username}}/forutils/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/{{codecov_username}}/forutils
-  :alt: Code coverage
-  :align: right
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-  :target: https://github.com/ambv/black
-  :alt: Code Style
-  :align: right
+.. 
+  image:: https://codecov.io/gh/{{codecov_username}}/forutils/branch/master/graph/badge.svg
+	  :target: https://codecov.io/gh/{{codecov_username}}/forutils
+	  :alt: Code coverage
+	  :align: right
+.. 
+	image:: https://img.shields.io/badge/code%20style-black-000000.svg
+	  :target: https://github.com/ambv/black
+	  :alt: Code Style
+	  :align: right
 
-=============
-Library Title
-=============	
+=================
+FORecasting UTILS
+=================	
 
-**forutils** is a library to do stuff.
+**forutils** is here to make better features for forecasting purpose.
+
 
 .. epigraph::
-   *"My Library" [m-eye-lie-brare-eeh] ~ a beautiful tagline*
-
-Introduce the library here.
-
-Some parts of ReStructuredText (rst) are shown to help you write your docs in :ref:`a_chapter`.
+   This is some test text here!!!
 
 
+Lot have to be written here but would write eventually.
 
-.. _reason_for_being:
 
-Raison d'etre
-=============
-
-Insert your personal rant here...
+Something which I dont what to see right now but is only for reference :ref:`a_chapter`.
 
 
 

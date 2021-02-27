@@ -9,43 +9,9 @@ Origins
 
 A bit of background....
 
-.. _version_0.0.x:
+.. _version_0.0.1:
 
-0.0.x
+0.0.1
 =====
 
-Something about this release
-
-New Features
-------------
-#. Blah
-#. Bleep
-
-Backward Incompatible API Changes
----------------------------------
-#. n/a (Initial release)
-
-Bug Fixes & Minor Changes
--------------------------
-#. n/a (Initial Release)
-
-
-.. _version_0.0.y:
-
-0.0.y
-=====
-
-You get it...
-
-New Features
-------------
-#. Blah
-#. Bleep
-
-Backward Incompatible API Changes
----------------------------------
-#. n/a (Initial release)
-
-Bug Fixes & Minor Changes
--------------------------
-#. n/a (Initial Release)
+Just setting the base to really start working on things. Nothing useful here.!

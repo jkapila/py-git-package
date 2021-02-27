@@ -21,5 +21,16 @@ Compilation
 
 There is presently no need to compile **forutils**, as it's written entirely in python.
 
+.. _dependson:
+
+Depends On
+============
+
+.. code-block:: py
+	
+	numpy 
+	scipy
+	pandas
+
 
 

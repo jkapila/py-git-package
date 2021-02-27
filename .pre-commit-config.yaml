@@ -1,4 +1,4 @@
-exclude: 'build|docs|node_modules|.git|.tox|dist|docs|{{library_name}}.egg-info'
+exclude: 'build|docs|node_modules|.git|.tox|dist|docs|forutils.egg-info'
 default_stages: [commit]
 fail_fast: true
 default_language_version:
@@ -32,11 +32,7 @@ repos:
         additional_dependencies: [flake8-isort]
         language_version: python3
 
-  - repo: https://github.com/thclark/pre-commit-sphinx
-    rev: 0.0.1
-    hooks:
-      - id: build-docs
-        language_version: python3
+
 
   - repo: https://github.com/windpioneers/pre-commit-hooks
     rev: 0.0.5

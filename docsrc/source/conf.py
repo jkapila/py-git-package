@@ -12,7 +12,9 @@
 
 import os
 import sys
+from datetime import date
 #import sphinx_rtd_theme
+#import furo
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -52,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'fortuils'
-copyright = u'{{copyright}}'
+copyright = u'{date.today().year} Jitin Kapila'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -82,7 +84,7 @@ exclude_patterns = []
 # default_role = None
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
-# add_function_parentheses = True
+add_function_parentheses = True
 
 # If true, the current module name will be prepended to all description
 # unit titles (such as .. function::).
@@ -105,14 +107,17 @@ pygments_dark_style = "monokai"
 # a list of builtin themes.
 html_theme = 'furo'
 
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-# html_theme_options = {}
+html_theme_options = {
+    "sidebar_hide_name": True,
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ["_themes",]
-# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# html_theme_path = ["_themes",]
+# html_theme_path = [furo.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -133,7 +138,7 @@ html_favicon = 'favicon.ico'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['images']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -177,11 +182,11 @@ html_show_copyright = True
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'libraryDoc'
+htmlhelp_basename = 'forutilsDoc'
 
 # -- Options for LaTeX output --------------------------------------------------
 
-latex_elements = {
+#latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     # 'papersize': 'letterpaper',
 
@@ -190,14 +195,14 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     # 'preamble': '',
-}
+#}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [
-  ('index', 'fortuils.tex', u'fortuils',
-   u'Jitin Kapila', 'manual'),
-]
+#latex_documents = [
+#  ('index', 'fortuils.tex', u'fortuils',
+#   u'Jitin Kapila', 'manual'),
+#]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -225,8 +230,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'fortuils', u'fortuils',
-     [u'Jitin Kapila'], 1)
+    ('index', 'fortuils', u'fortuils Documentation', [u'Jitin Kapila'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -239,9 +243,13 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'fortuils', u'fortuils',
-   u'Jitin Kapila', 'fortuils', 'Utilities for Forecasting',
-   'Miscellaneous'),
+  ('index', 
+  'fortuils', 
+  u'fortuils Documentation',
+  u'Jitin Kapila', 
+  'fortuils', 
+  'Utilities for Forecasting',
+  'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

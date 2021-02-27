@@ -6,10 +6,10 @@ Quick Start
 
 .. _create_a_twine:
 
-Create your blah blah
-=====================
+Just to quick start things
+==========================
 
-Show your users how to do things...
+To Use A
 
 .. code-block:: py
 
@@ -17,3 +17,11 @@ Show your users how to do things...
 	   "title": "My first atomising discombobulator",
 	   "description": "A simple example... estimates the `foz` value of an atomising discombobulator."
    }
+
+
+To Use B
+
+.. code-block:: py
+
+   mgp = MovieGenreProcess()
+   mgp.fit(docs)
