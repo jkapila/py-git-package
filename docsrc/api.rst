@@ -1,8 +1,8 @@
 .. _api:
 
-===
-API
-===
+=================
+API Documentation
+=================
 
 
 .. _api_example_module:
@@ -10,14 +10,20 @@ API
 Power Curve
 ===========
 
-.. automodule:: forutils.example_module
+.. automodule:: sourcecodes.example_module
     :members:
-
+	
+More Example
+============
+	
+.. autoclass:: sourcecodes.example_module
+    :members:
+    :noindex:
 
 .. _api_exceptions:
 
 Exceptions
 ==========
 
-.. automodule:: forutils.exceptions
+.. automodule:: sourcecodes.exceptions
     :members:

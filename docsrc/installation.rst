@@ -4,12 +4,12 @@
 Installation
 ============
 
-forutils is available on `pypi <https://pypi.org/>`_, so installation into your python virtual environment is dead
+**sourcecodes** is available on `pypi <https://pypi.org/>`_, so installation into your python virtual environment is dead
 simple:
 
-.. code-block:: py
+.. code:: none
 
-    pip install forutils
+    pip install sourcecodes
 
 Don't have a virtual environment with pip? You probably should! ``pyenv`` is your friend. Google it.
 
@@ -19,14 +19,14 @@ Don't have a virtual environment with pip? You probably should! ``pyenv`` is you
 Compilation
 ============
 
-There is presently no need to compile **forutils**, as it's written entirely in python.
+There is presently no need to compile **sourcecodes**, as it's written entirely in python.
 
 .. _dependson:
 
 Depends On
 ============
 
-.. code-block:: py
+.. code:: py
 	
 	numpy 
 	scipy

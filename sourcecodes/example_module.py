@@ -1,7 +1,7 @@
 import logging
 import pkg_resources
 
-from . import exceptions
+from .exceptions import SomethingException
 
 
 logger = logging.getLogger(__name__)
@@ -21,6 +21,7 @@ class ExampleModule:
     It'll get rendered in the auto generated docs. If Kanye could see this he'd rap about how great it is.
 
     """
+
     def __init__(self, **kwargs):
         """ Instantiate a glorious ExampleModule
         """
@@ -51,16 +52,16 @@ class ExampleModule:
             do_something(thing, EXAMPLE_CONSTANT, EXAMPLE_CONSTANT_OPTIONS)
 
         except NameError as e:
-            raise exceptions.SomethingException(str(e))
+            raise SomethingException(str(e))
 
     def example_of_how_to_refer_to_a_file_in_the_package(self):
         """ Method showing how to reference files within the package
 
         You need to refer to the file in the package bundle, because you don't know where the
-        module will be called from... this gets you the right path always, relative to {{library_name}}
+        module will be called from... this gets you the right path always, relative to sourcecodes
 
         Don't forget to include non-python files in the MANIFEST.in too!
 
         """
-        file_name = pkg_resources.resource_string("{{library_name}}", "module_data/file_required_by_module.json")
+        file_name = pkg_resources.resource_string("sourcecodes", "module_data/file_required_by_module.json")
         logger.info("file name is %s", file_name)

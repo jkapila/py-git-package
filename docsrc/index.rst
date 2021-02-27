@@ -1,9 +1,9 @@
 
-=================
-FORecasting UTILS
-=================	
+=============================
+Documentation Is all you Need
+=============================
 
-**forutils** is here to make better features for forecasting purpose.
+**sourcecodes** is here to make better features for forecasting purpose.
 
 
 .. epigraph::
@@ -11,9 +11,6 @@ FORecasting UTILS
 
 
 Lot have to be written here but would write eventually.
-
-
-
 
 
 
