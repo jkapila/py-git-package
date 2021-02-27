@@ -11,7 +11,7 @@ Just to quick start things
 
 To Use A
 
-.. code-block:: py
+.. code:: javascript
 
    {
 	   "title": "My first atomising discombobulator",
@@ -21,7 +21,7 @@ To Use A
 
 To Use B
 
-.. code-block:: py
+.. code:: py
 
    mgp = MovieGenreProcess()
    mgp.fit(docs)
