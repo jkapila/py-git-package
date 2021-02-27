@@ -34,15 +34,9 @@ This a python package template based on shoulder of
 1. `python-library-template <https://github.com/thclark/python-library-template>`_ as main pakage template created by `Tom Clark  <https://github.com/thclark>`_
 2. `Furo  <https://pradyunsg.me/furo/>`_ (Sphinx theme) for Documentation
 3. Github Pages for hosting Documentation
-4. `Pre-commit  <www.pre-commit.com>`_ hooks for cleaning and building things before we ake any commit (Includes Sphinx Auto Doc Builds too)
+4. `Pre-commit  <https://pre-commit.com/>`_ hooks for cleaning and building things before we ake any commit (Includes Sphinx Auto Doc Builds too)
 
 .. context-end
 
 
 The Documentation can be found at `here. <https://jkapila.github.io/py-git-package/>`_
-
-.. important::
-    This library is in very early stages. Like the idea of it? Please
-    `star us on GitHub <https://github.com/jkapila/fpy-git-package>`_ and contribute via the
-    `issues board <https://github.com/jkapila/py-git-package/issues>`_ and
-    `roadmap <https://github.com/jkapil/py-git-package/projects/1>`_.
