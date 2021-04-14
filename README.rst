@@ -40,3 +40,11 @@ This a python package template based on shoulder of
 
 
 The Documentation can be found at `here. <https://jkapila.github.io/py-git-package/>`_
+
+TODO
+====
+
+1. Add Sphinx Example Galarey from `Sphinx Gallery  <https://sphinx-gallery.github.io/stable/index.html>`_
+2. Add `Sphinx Matplotlib  <https://matplotlib.org/3.1.1/devel/plot_directive.html>`_ native support
+3. Add Plotly in Sphinx support via `Plotly Directive <https://github.com/harupy/sphinx-plotly-directive>`_ or `Sphinx Charts <https://github.com/thclark/sphinx-charts>`_
+4. Better pre commit hook for documentation rebuilding. (Sphinx build is not working efficiently)
