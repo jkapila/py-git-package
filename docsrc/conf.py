@@ -13,6 +13,7 @@
 import os
 import sys
 from datetime import date
+from sphinx_gallery.sorting import FileNameSortKey
 #import sphinx_rtd_theme
 #import furo
 
@@ -37,6 +38,8 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
 	'sphinx.ext.githubpages',
+	# adding sphinx gallery support
+    'sphinx_gallery.gen_gallery',
 	# Some more good feeling extentions
 	"sphinx_copybutton",
     "sphinx_inline_tabs",
@@ -185,7 +188,28 @@ html_show_copyright = True
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'forutilsDoc'
+htmlhelp_basename = 'sourcecodesDoc'
+
+
+# sphinx-gallery configuration
+sphinx_gallery_conf = {
+    # path to your example scripts
+    'examples_dirs': ['../examples'],
+    # path to where to save gallery generated output
+    'gallery_dirs': ['example_gallery'],
+    # specify that examples should be ordered according to filename
+    'within_subsection_order': FileNameSortKey,
+    # directory where function granular galleries are stored
+    'backreferences_dir': 'gen_modules/backreferences',
+    # running examples
+    'plot_gallery': 'True',
+    # linenumbers
+    'line_numbers': True,
+    # more behaviours
+    'capture_repr': ('_repr_html_', '__repr__'),
+    'thumbnail_size': (250, 150),
+    'show_memory': False
+   }
 
 # -- Options for LaTeX output --------------------------------------------------
 
@@ -233,7 +257,7 @@ htmlhelp_basename = 'forutilsDoc'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'fortuils', u'fortuils Documentation', [u'Jitin Kapila'], 1)
+    ('index', 'sourcecodes', u'sourcecodes Documentation', [u'Author Name'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -247,11 +271,11 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 
-  'fortuils', 
-  u'fortuils Documentation',
-  u'Jitin Kapila', 
-  'fortuils', 
-  'Utilities for Forecasting',
+  'sourcecodes', 
+  u'sourcecodes documentation',
+  u'Author Name', 
+  'sourcecodes', 
+  'Utilities for Doing things',
   'Miscellaneous'),
 ]
 

@@ -8,6 +8,7 @@ Py - Git - Package : A modern template for Python Package
 	  :target: https://codecov.io/gh/{{codecov_username}}/forutils
 	  :alt: Code coverage
 	  :align: right
+
 ..  image:: https://img.shields.io/badge/code%20style-black-000000.svg
 	  :target: https://github.com/ambv/black
 	  :alt: Code Style
@@ -39,12 +40,30 @@ This a python package template based on shoulder of
 .. context-end
 
 
-The Documentation can be found at `here. <https://jkapila.github.io/py-git-package/>`_
+The Documentation generated can be found at `here. <https://jkapila.github.io/py-git-package/>`_
+
+.. steps-begin
+
+Use following steps to make use the whole template
+
+1. Do a pre-commit install with :code:`pre-commit install`
+2. Add your code in respective places
+3. Write documentation
+4. Run :code:`sphinx-build -b html -j 2 docsrc docs` to create the documentation and sphinx gallery
+	a. (Optional) Check for any errors with precommit :code:`pre-commit run --all-files`
+5. Add your files and do your commit with some good message and wait for pre-commeit to do its charm.
+6. Correct any error if any from precommit.
+7. Push your code to git 
+8. Host your documentation on github pages by changing folder to docs
+9. Showcase you work to world. :)
+
+
+.. steps-end
+
 
 TODO
 ====
 
-1. Add Sphinx Example Galarey from `Sphinx Gallery  <https://sphinx-gallery.github.io/stable/index.html>`_
-2. Add `Sphinx Matplotlib  <https://matplotlib.org/3.1.1/devel/plot_directive.html>`_ native support
-3. Add Plotly in Sphinx support via `Plotly Directive <https://github.com/harupy/sphinx-plotly-directive>`_ or `Sphinx Charts <https://github.com/thclark/sphinx-charts>`_
-4. Better pre commit hook for documentation rebuilding. (Sphinx build is not working efficiently)
+1. Add `Sphinx Matplotlib  <https://matplotlib.org/3.1.1/devel/plot_directive.html>`_ native support
+2. Add Plotly in Sphinx support via `Plotly Directive <https://github.com/harupy/sphinx-plotly-directive>`_ or `Sphinx Charts <https://github.com/thclark/sphinx-charts>`_
+3. Better pre commit hook for documentation rebuilding. (Sphinx build is not working efficiently)

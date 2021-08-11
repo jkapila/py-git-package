@@ -1,11 +1,12 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation" href="installation.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Installation" href="installation.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><meta name="generator" content="sphinx-3.5.1, furo 2021.02.21.beta25"/>
+    <link rel="shortcut icon" href="_static/favicon.ico"/><meta name="generator" content="sphinx-3.5.1, furo 2021.04.11.beta34"/>
         <title>Home - Py-Git-Package</title>
-      <link rel="stylesheet" href="_static/styles/furo.css?digest=33d2fc4f3f180ec1ffc6524e273e21d7d58cbe49">
+      <link rel="stylesheet" href="_static/styles/furo.css?digest=59ab60ac09ea94ccfe6deddff6d715cce948a6fc">
     <link rel="stylesheet" href="_static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
     
@@ -19,8 +20,8 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+      --color-code-background: #f8f8f8;
+  --color-code-foreground: white;
   
     }
   }
@@ -32,12 +33,16 @@
   
   }
   .override-dark {
-    --color-code-background: #202020;
-  --color-code-foreground: #d0d0d0;
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: white;
   
   }
 </style><link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery-rendered-html.css" />
     <link rel="stylesheet" href="_static/styles/furo-extensions.css?digest=d391b54134226e4196576da3bdb6dddb7e05ba2b"></head>
   <body dir="">
     
@@ -116,6 +121,10 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="example_gallery/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="example_gallery/plot_example.html">A Generic Example</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="version_history.html">Version History</a></li>
 <li class="toctree-l1"><a class="reference internal" href="example_chapter.html">A Chapter</a></li>
@@ -152,9 +161,30 @@
 </ol>
 <p>Lot have to be written and would be written eventually.</p>
 <p>Something which I dont what to see right now but is only for reference <a class="reference internal" href="example_chapter.html#a-chapter"><span class="std std-ref">A Chapter</span></a>.</p>
+</div>
+<div class="section" id="steps-post-cloning">
+<h2>Steps post cloning<a class="headerlink" href="#steps-post-cloning" title="Permalink to this headline">¶</a></h2>
+<p>Use following steps to make use the whole template</p>
+<ol class="arabic simple">
+<li><p>Do a pre-commit install with <code class="code docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code></p></li>
+<li><p>Add your code in respective places</p></li>
+<li><p>Write documentation</p></li>
+<li><dl class="simple">
+<dt>Run <code class="code docutils literal notranslate"><span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span> <span class="pre">-j</span> <span class="pre">2</span> <span class="pre">docsrc</span> <span class="pre">docs</span></code> to create the documentation and sphinx gallery</dt><dd><ol class="loweralpha simple">
+<li><p>(Optional) Check for any errors with precommit <code class="code docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span> <span class="pre">--all-files</span></code></p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Add your files and do your commit with some good message and wait for pre-commeit to do its charm.</p></li>
+<li><p>Correct any error if any from precommit.</p></li>
+<li><p>Push your code to git</p></li>
+<li><p>Host your documentation on github pages by changing folder to docs</p></li>
+<li><p>Showcase you work to world. :)</p></li>
+</ol>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>This library is in very early stages. Like the idea of it? Please
+<p>This library is a tempalte that you can use off the shelf to make your awesome package. Like the idea of it? Please
 <a class="reference external" href="https://github.com/jkapila/fpy-git-package">star us on GitHub</a> and contribute via the
 <a class="reference external" href="https://github.com/jkapila/py-git-package/issues">issues board</a> and
 <a class="reference external" href="https://github.com/jkapil/py-git-package/projects/1">roadmap</a>.</p>
@@ -180,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api.html#module-sourcecodes.exceptions">Exceptions</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="example_gallery/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="version_history.html">Version History</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="version_history.html#origins">Origins</a></li>
@@ -235,6 +266,7 @@
             <ul>
 <li><a class="reference internal" href="#">Py-Git-Package</a><ul>
 <li><a class="reference internal" href="#documentation-as-is">Documentation As Is</a></li>
+<li><a class="reference internal" href="#steps-post-cloning">Steps post cloning</a></li>
 <li><a class="reference internal" href="#full-table-of-contents">Full Table of Contents</a></li>
 </ul>
 </li>

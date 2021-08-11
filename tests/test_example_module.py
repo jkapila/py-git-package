@@ -1,6 +1,5 @@
 import unittest
-
-from {{library_name}} import exceptions, ExampleModule
+from sourcecode import ExampleModule, exceptions
 
 from .base import BaseTestCase
 
