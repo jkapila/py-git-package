@@ -42,6 +42,8 @@ This a python package template based on shoulder of
 
 The Documentation generated can be found at `here. <https://jkapila.github.io/py-git-package/>`_
 
+
+==============================================================
 .. steps-begin
 
 Use following steps to make use the whole template
@@ -53,14 +55,14 @@ Use following steps to make use the whole template
 	a. (Optional) Check for any errors with precommit :code:`pre-commit run --all-files`
 5. Add your files and do your commit with some good message and wait for pre-commeit to do its charm.
 6. Correct any error if any from precommit.
-7. Push your code to git 
+7. Push your code to git
 8. Host your documentation on github pages by changing folder to docs
 9. Showcase you work to world. :)
 
 
 .. steps-end
 
-
+================================================================
 TODO
 ====
 
