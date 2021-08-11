@@ -42,8 +42,12 @@ This a python package template based on shoulder of
 
 The Documentation generated can be found at `here. <https://jkapila.github.io/py-git-package/>`_
 
+.. role:: raw-html(raw)
+    :format: html
 
-==============================================================
+
+:raw-html:`<br />`
+
 .. steps-begin
 
 Use following steps to make use the whole template
@@ -59,10 +63,11 @@ Use following steps to make use the whole template
 8. Host your documentation on github pages by changing folder to docs
 9. Showcase you work to world. :)
 
-
 .. steps-end
 
-================================================================
+
+:raw-html:`<br />`
+
 TODO
 ====
 

@@ -151,36 +151,33 @@ to download the full example code</p>
 <div class="sphx-glr-example-title section" id="a-generic-example">
 <span id="sphx-glr-example-gallery-plot-example-py"></span><h1>A Generic Example<a class="headerlink" href="#a-generic-example" title="Permalink to this headline">¶</a></h1>
 <p>A very small aexample to create a plot</p>
-<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</pre></div>
-</td></tr></table></div></div>
 <p>Importing packages</p>
-<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+ <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </td></tr></table></div></div>
 <p>Creating a a small data</p>
-<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
  <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
- <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+ <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
 </pre></div>
 </td></tr></table></div></div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[ 0.          0.47942554  0.84147098  0.99749499  0.90929743  0.59847214
-  0.14112001 -0.35078323 -0.7568025  -0.97753012 -0.95892427 -0.70554033
- -0.2794155   0.21511999  0.6569866   0.93799998  0.98935825  0.79848711
-  0.41211849 -0.07515112 -0.54402111 -0.87969576]
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[0.         0.00999983 0.01999867 0.0299955  0.03998933 0.04997917
+ 0.05996401 0.06994285 0.07991469 0.08987855]
 </pre></div>
 </div>
 <p>now lets plot it</p>
-<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"a plot"</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="table-wrapper"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"a plot"</span><span class="p">)</span>
  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </td></tr></table></div></div>
 <img alt="plot example" class="sphx-glr-single-img" src="../_images/sphx_glr_plot_example_001.png"/>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.180 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.112 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-example-gallery-plot-example-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/4c32fa1e6f4c3d73dc99f86446a3cdae/plot_example.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_example.py</span></code></a></p>
@@ -219,7 +216,7 @@ to download the full example code</p>
         </div>
 
         <div class="related-information">
-              Copyright &#169; {date.today().year} Jitin Kapila
+              Copyright &#169; 2021 Author Name
         </div>
         
       </footer>

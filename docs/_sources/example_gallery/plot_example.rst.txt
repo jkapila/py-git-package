@@ -22,12 +22,16 @@ A Generic Example
 =======================================
 A very small aexample to create a plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 6-8
+.. GENERATED FROM PYTHON SOURCE LINES 8-9
+
+Importing packages
+
+.. GENERATED FROM PYTHON SOURCE LINES 9-12
 
 .. code-block:: default
-   :lineno-start: 7
+   :lineno-start: 9
 
-
+    import numpy as np
     import matplotlib.pyplot as plt
 
 
@@ -36,37 +40,19 @@ A very small aexample to create a plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-10
 
-Importing packages
-
-.. GENERATED FROM PYTHON SOURCE LINES 10-13
-
-.. code-block:: default
-   :lineno-start: 10
-
-    import numpy as np
-
-
-
-
-
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 14-15
+.. GENERATED FROM PYTHON SOURCE LINES 13-14
 
 Creating a a small data
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+.. GENERATED FROM PYTHON SOURCE LINES 14-18
 
 .. code-block:: default
-   :lineno-start: 15
+   :lineno-start: 14
 
-    x = np.arange(0, 11, 0.5)
+    x = np.arange(0, 11, 0.01)
     y = np.sin(x)
-    print(y)
+    print(y[:10])
 
 
 
@@ -78,22 +64,20 @@ Creating a a small data
 
  .. code-block:: none
 
-    [ 0.          0.47942554  0.84147098  0.99749499  0.90929743  0.59847214
-      0.14112001 -0.35078323 -0.7568025  -0.97753012 -0.95892427 -0.70554033
-     -0.2794155   0.21511999  0.6569866   0.93799998  0.98935825  0.79848711
-      0.41211849 -0.07515112 -0.54402111 -0.87969576]
+    [0.         0.00999983 0.01999867 0.0299955  0.03998933 0.04997917
+     0.05996401 0.06994285 0.07991469 0.08987855]
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-21
+.. GENERATED FROM PYTHON SOURCE LINES 19-20
 
 now lets plot it
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-23
+.. GENERATED FROM PYTHON SOURCE LINES 20-22
 
 .. code-block:: default
-   :lineno-start: 21
+   :lineno-start: 20
 
     plt.plot(x, y, marker="o", linestyle="", label="a plot")
     plt.show()
@@ -111,7 +95,7 @@ now lets plot it
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.180 seconds)
+   **Total running time of the script:** ( 0 minutes  0.112 seconds)
 
 
 .. _sphx_glr_download_example_gallery_plot_example.py:
